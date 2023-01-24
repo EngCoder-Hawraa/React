@@ -1,0 +1,9 @@
+-State
+- Js Object
+- Private Feature belongs to a single component
+- Holds data about the component
+- State can be changed
+- can be changed using inbuilt setState()
+- similar to variables declared within a function
+- managed and limited to your current component
+
