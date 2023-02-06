@@ -14,28 +14,41 @@
 
 
     <script type="text/babel">
+        // توضيح الفكرة
+        // props ={
+        //     name: "test child",
+        // }
     // App Component [ parent ] 
     class App extends React.Component{
+        state ={
+            parent: "App Component is Parent Component",
+        }
         render(){
             return (
             <div>
-                <p> {this.state.name} </p>
-                <Header title="Header React" name="Header" />
-                <Content name="Content"/>
-                <Footer name="Footer"/>
+                Hello React JS from Parent Component
+                <Child name={this.state.parent} />
+                State of This Component is {this.state.parent}
             </div>
-        )
+            )
         }
-       }
-
+    }
+    //    ======Class========
     // Child Component
     class Child extends React.Component{
         render(){
             return(
-                <div>Hello Rect from Parent Component</div>
+                <p>Child Component and props is : {this.props.name}</p>
             )
         }
     }
+
+    // =======Function========
+    // function Child(props){
+    //     return(
+    //         <p>Child Component and props is : {props.name}</p>
+    //     )
+    // }
 
        ReactDOM.render(<App />,document.getElementById('app'))
     </script>

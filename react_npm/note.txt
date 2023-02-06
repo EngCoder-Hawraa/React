@@ -1,0 +1,16 @@
+- NPM stands for (Node Package Manager)
+- System that contain all Packages that related to Node
+
+- Install node js by link
+https://nodejs.org/en/
+
+====== Steps To install and create React App =====
+- node -v
+- create-react-app app-name
+- cd app-name
+- npm start OR yarn start
+
+
+- طلع خطأ لذلك سويت هيج
+- npm config set registery https://registry.npmjs.org/
+- npx create-react-app myapp
